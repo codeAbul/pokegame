@@ -44,7 +44,7 @@ header {
 }
 
 .pokedex__verdict--winner{
-  color: greenyellow;
+  color: green;
 }
 
 .pokedex__verdict--loser{
