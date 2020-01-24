@@ -89,3 +89,12 @@ img {
 .pokecard__img:hover{
   transform: scale(2);
 }
+
+.pokecard__type{
+  margin:0.2em 0;
+}
+
+.pokecard__experience{
+  margin:0;
+  margin-bottom:0.5em;
+}
