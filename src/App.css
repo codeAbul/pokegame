@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Fira Sans";
+  background: antiquewhite;
+  color: blue;
+}
+
+header {
+  display: grid;
+  padding: 0.5em 0;
+  place-items: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.pokedex {
+  display: grid;
+  margin: 1em auto;
+  width: 90%;
+  gap: 1em;
+}
+
+.pokedex__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-auto-rows: 28vh;
+  gap: 1em;
+  justify-items: center;
+  margin-bottom: 1em;
+}
+
+.pokedex__title,
+.pokedex__experience,
+.pokedex_verdict {
+  grid-column: 1/-1;
+  margin: 0;
+}
+
+.pokecard {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  border: 2px darkorchid solid;
+  background: gainsboro;
+}
+
+img {
+  height: 100%;
+  object-fit: contain;
+}
