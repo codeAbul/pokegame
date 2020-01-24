@@ -43,6 +43,14 @@ header {
   margin: 0;
 }
 
+.pokedex__verdict--winner{
+  color: greenyellow;
+}
+
+.pokedex__verdict--loser{
+  color: red;
+}
+
 .pokecard {
   width: 100%;
   display: grid;
