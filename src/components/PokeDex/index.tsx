@@ -1,4 +1,5 @@
 import React from "react";
+import uuid from "uuid";
 import { POKECARDS } from "../../utils/constants";
 import { IPokeCard } from "../../typings";
 import PokeCard from "../PokeCard";
@@ -30,6 +31,7 @@ function renderAllPokeCards(pokemon: IPokeCard[]) {
         name={name}
         baseExperience={baseExperience}
         type={type}
+        key={uuid()}
       />
     );
   }
