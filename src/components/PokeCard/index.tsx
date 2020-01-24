@@ -8,7 +8,7 @@ function PokeCard({ id, name, type, baseExperience }: IProps) {
   return (
     <article className={"pokecard"}>
       <h2 className={"pokecard__name"}>{name}</h2>
-      <img src={`${POKEIMGAPI}/${paddedId}.png`} alt={""} />
+      <img src={`${POKEIMGAPI}/${paddedId}.png`} alt={""} className={"pokecard__img"} />
       <p>
         Type: {type} <br /> Exp: {baseExperience}
       </p>

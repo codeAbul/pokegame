@@ -25,6 +25,7 @@ header {
   margin: 1em auto;
   width: 90%;
   gap: 1em;
+  place-items: center;
 }
 
 .pokedex__cards {
@@ -33,7 +34,8 @@ header {
   grid-auto-rows: 28vh;
   gap: 1em;
   justify-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  width:100%;
 }
 
 .pokedex__title,
@@ -43,6 +45,11 @@ header {
   margin: 0;
 }
 
+.pokedex__experience__total{
+  font-weight: bold;
+  color: darkorchid;
+}
+
 p{
   font-size:1.2rem;
 }
@@ -50,6 +57,7 @@ p{
 .pokedex__verdict{
   font-weight:bolder;
   font-size:1.6em;
+  margin:0.5em 0;
 }
 
 .pokedex__verdict--winner{
@@ -71,4 +79,13 @@ p{
 img {
   height: 100%;
   object-fit: contain;
+}
+
+.pokecard__img{
+  transition: transform 0.6s ease-out;
+  will-change: transform;
+}
+
+.pokecard__img:hover{
+  transform: scale(2);
 }

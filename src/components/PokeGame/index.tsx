@@ -15,8 +15,8 @@ function PokeGame() {
 
   return (
     <article className={"pokegame"}>
-      <PokeDex pokemon={firstHand} title={"Hand 1"} experience={firstHandExp}  isWinner={isFirstHandWinner}/>
-      <PokeDex pokemon={secondHand} title={"Hand 2"} experience={secondHandExp} isWinner={!isFirstHandWinner} />
+      <PokeDex pokemon={firstHand} experience={firstHandExp}  isWinner={isFirstHandWinner}/>
+      <PokeDex pokemon={secondHand} experience={secondHandExp} isWinner={!isFirstHandWinner} />
     </article>
   );
 }

@@ -3,13 +3,15 @@ import { POKECARDS } from "../../utils/constants";
 import { IPokeCard } from "../../typings";
 import PokeCard from "../PokeCard";
 
-function PokeDex({ pokemon = POKECARDS, title, experience, isWinner }: IProps) {
+function PokeDex({ pokemon = POKECARDS, experience, isWinner }: IProps) {
   const verdictText = isWinner ? "Winner" : "Loser";
   const verdictClass = `pokedex__verdict--${verdictText.toLowerCase()}`;
   return (
     <article className={"pokedex"}>
-      <h2 className={"pokedex__title"}>{title}</h2>
-      <p className={"pokedex__experience"}>Total experience: {experience}</p>
+      <p className={"pokedex__experience"}>
+        Total experience:{" "}
+        <span className={"pokedex__experience__total"}>{experience}</span>
+      </p>
       <p className={`pokedex__verdict ${verdictClass} `}> {verdictText}</p>
       <article className={"pokedex__cards"}>
         {renderAllPokeCards(pokemon)}
@@ -35,7 +37,6 @@ function renderAllPokeCards(pokemon: IPokeCard[]) {
 
 interface IProps {
   pokemon?: IPokeCard[];
-  title: string;
   experience: number;
   isWinner: boolean;
 }
