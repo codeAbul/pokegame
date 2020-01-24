@@ -43,6 +43,15 @@ header {
   margin: 0;
 }
 
+p{
+  font-size:1.2rem;
+}
+
+.pokedex__verdict{
+  font-weight:bolder;
+  font-size:1.6em;
+}
+
 .pokedex__verdict--winner{
   color: green;
 }
